@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz SAPPP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+</head>
+
+<body>
+    <h1> SAPPP 2024 </h1>
+    
+    <div class="container"> </div>
+        <div class="quadro">
+            <div id="question">{{ question }}</div>
+             <div id="answer": style="display: none;"> {{ answer }}></div>              
+        </div>
+        <div class="button-group">
+            <button id="show-answer">Modo de Avaliar</button>
+            <button onclick="window.location.href = 'index2';">Referencias</button>
+        </div>
+       
+    <script>
+        document.getElementById('show-answer').onclick = function() {
+            var answerDiv = document.getElementById('answer');
+            if (answerDiv.style.display === 'none') {
+                answerDiv.style.display = 'block';
+            } else {
+                 answerDiv.style.display = 'none';
+            }     
+
+        };
+    </script>
+</body>
+</html>
