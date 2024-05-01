@@ -40,7 +40,17 @@ h1{
         height: auto; /* Altura automática baseada no conteúdo */
 }
 
-
+.quadro2 {
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        border: 2px solid #000; /* Define a borda do quadro */
+        padding: 20px; /* Espaço entre o texto e a borda do quadro */
+        margin: 50px; /* Espaço externo ao redor do quadro */
+        background-color: #f0f0f0; /* Cor de fundo do quadro */
+        width: 1100px; /* Largura do quadro */
+        height: auto; /* Altura automática baseada no conteúdo */
+}
 
 .container {
     display: grid;
